@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - PikadeX</title>
+    <link rel="stylesheet" href="home.css" /> 
+  </head>
+  <body>
+    <div class="task-manager">
+      <!-- left bar starts -->
+      <div class="left-bar">
+        <!-- left content starts -->
+        <div class="left-content">
+          <ul class="action-list">
+            <li class="item">
+              <span>Home</span>
+            </li>
+            <li class="item">
+              <span>Analyse</span>
+            </li>
+            <li class="item">
+              <span>Important</span>
+            </li>
+          </ul>
+
+          <ul class="category-list">
+            <li class="item">
+              <span><a href="about.html">About</a></span>
+            </li>
+            <li class="item">
+              <span><a href="https://avishkar.mnnit.ac.in" target="_blank">Avishkar</a></span>
+            </li>
+            <li class="item">
+              <span><a href="http://mnnit.ac.in" target="_blank">MNNITA</a></span>
+            </li>
+          </ul>
+        </div>
+        <!-- left content ends -->
+      </div>
+      <!--  -->
+      <!-- left bar ends -->
+
+      <!-- page content starts -->
+      <div class="page-content">
+        <div class="header">Your Tasks</div>
+        <div>
+          <label for="types">Sort by</label>
+          <select name="types">
+            <option value="Date Created">Date Created</option>
+            <option value="Deadline">Deadline</option>
+            <option value="Time for completion">Time fot completion</option>
+            <option value="Title name">Title Name</option>
+          </select>
+        </div>
+        <!-- contnet categories starts -->
+        <div class="content-categories">
+          <div class="label-wrapper">
+            <label>All Tasks</label>
+          </div>
+        </div>
+        <!-- contemt categories ends -->
+        
+        <!-- tasks wrapper starts -->
+        <div class="tasks-wrapper">
+          
+        </div>
+        <!-- tasks wrapper ends -->
+      </div>
+      <!--  -->
+      <!-- page content ends -->
+
+      <!-- right bar starts -->
+      <div class="right-bar">
+        <div class="header">Add a task</div>
+        <div class="right-content">
+          <div class="task-box yellow">
+            <div class="description-task">
+              <div class="task-name">Title for the task</div>
+              <input class="a-title" type="text" placeholder="Title" />
+              <div class="a-error"><p class="aTitleError"></p></div>
+            </div>
+          </div>
+          <div class="task-box blue">
+            <div class="description-task">
+              <div class="task-name">Start Date</div>
+              <input class="a-startDate" type="date" />
+              <div class="a-error"><p class="aSDateError"></p></div>
+            </div>
+          </div>
+          <div class="task-box red">
+            <div class="description-task">
+              <div class="task-name">End date</div>
+              <input class="a-endDate" type="date" />
+              <div class="a-error"><p class="aEDateError"></p></div>
+            </div>
+          </div>
+          <div class="task-box green">
+            <div class="description-task">
+              <div class="task-name">Task Description</div>
+              <input class="a-description" type="text" placeholder="Description for the task" />
+            </div>
+          </div>
+          <div class="task-box blue">
+            <div class="description-task">
+              <div class="task-name">Additional Note</div>
+              <input class="a-note" type="text" placeholder="Add some note" />
+            </div>
+          </div>
+          <button class="addTask" onclick="addTask()">Add Task</button>
+      </div>
+      <!-- right bar ends -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
