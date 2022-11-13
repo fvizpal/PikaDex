@@ -1,0 +1,13 @@
+body{
+    background-color: aliceblue;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contact{
+    border: 1px aliceblue;
+    width: 500px;
+    margin: auto;
+
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
+        <title>Pikadex</title>
+        <link rel="stylesheet" href="sign.css"/>
+    </head>
+    <body>
+        <h1><b>PIKADEX</b></h1>
+        <h2 class="headline">A Tamer for your wild Tasks</h2>
+        <div class="container">
+            <div id="loginBox">
+                <h2><u>Login</u></h2>
+                <button id="gle-login">Login using Google</button>
+                <button id="fb-login">Login using Facebook</button>
+
+                <div class="l-container">
+                    <h3>Login using Username</h3>
+                    <input id="l-user" type="text" placeholder="Username"/>
+                    <div><p id="l-userError"></p></div>
+                    <input id="l-password" type="password" placeholder="Password"/>
+                    <div><p id="l-passError"></p></div>
+                    <button id="login" onclick="login()"><a href="home.html">Pika Pika!</a></button>
+                </div>
+            </div>
+
+            <h2>OR</h2>
+            
+            <div class="signupBox">
+                <h3>Signup</h3>
+
+                <input class="s-username" type="text" placeholder="Username" />
+                <div><p class="s-userError" id="s-error"></p></div>
+                <input class="s-name" type="text" placeholder="Name" />
+                <div><p class="s-nameError" id="s-error"></p></div>
+                <input class="s-password" type="password" placeholder="Password" />
+                <div><p class="s-passError" id="s-error"></p></div>
+                <input class="s-confirmPassword" type="text" placeholder="Confirm Password" />
+                <div><p class="s-confirmError" id="s-error"></p></div>
+                
+                <button class="signup" onclick="signup()"><a href="home.html">SUBMIT</a></button>           
+            </div>
+        </div>
+    </body>
+    <script src="sign.js"></script>
+</html>
